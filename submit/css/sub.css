@@ -1,0 +1,44 @@
+.page-header{
+	margin-top: 0;
+	margin-top: -120px;
+}
+.panel-body{
+	padding-top: 22px;
+}
+
+footer{
+    padding: 1em;
+    color: white;
+    background:rgb(28,28,28);
+    clear: left;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: -104px;
+}
+
+footer ul a{
+	margin: 10px;
+	color: white;
+}
+
+.border{
+	margin-top: -100px;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height:70px;
+	background-color: black;
+}
+.img{
+	width:90px;
+	height: 90px;
+	margin-left: 20px;
+
+}
+.navbar{
+	margin-bottom: 0;
+}
+
+.dropdown-menu >li> a:hover{
+background-color: black;
+}

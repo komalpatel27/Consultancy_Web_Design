@@ -1,0 +1,93 @@
+.page-header{
+	margin-top: 0;
+}
+.panel-body{
+	padding-top: 0;
+}
+
+footer{
+    padding: 1em;
+    color: white;
+    background:rgb(28,28,28);
+    clear: left;
+    text-align: center;
+}
+
+footer ul a{
+	margin: 10px;
+	color: white;
+}
+
+.border{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height:70px;
+	background-color: black;
+}
+.img{
+	width:90px;
+	height: 90px;
+	margin-left: 20px;
+
+}
+.navbar{
+	margin-bottom: 0;
+}
+
+.dropdown-menu >li> a:hover{
+background-color: black;
+}
+.name{
+	height:100px;
+	background-color: #0099ff;
+	border:1px solid black;
+}
+.name h1{
+	text-align: center;
+	font-family: Monotype Corsiva;
+	font-size: 40px;
+	color: black;
+	
+}
+.outer{
+	background-color: #fff;
+	width:100%;
+	height:355px;
+}
+.inner1{
+	padding-left:25px;
+	padding-top:60px;
+	width: 400px;
+	height: 250px;
+	float: left;
+
+}
+.inner2{
+float: right;
+width: 920px;
+height: auto;
+padding-left:30px;
+padding-right:120PX;
+padding-top:40px;
+text-align: justify;
+}
+.inner2 h3{
+	
+	color:#0099ff;
+
+}
+
+.inner2 button{
+	
+	float: right;
+
+}
+.inner2 button[type="button"]{
+	background-color:#0099ff;
+	color: black;
+}
+.inner2 button[type="button"]:hover{
+	background-color:black;
+	color: #0099ff;
+}

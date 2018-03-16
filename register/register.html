@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consultancy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="registrationpage.css">
+
+
+
+
+    <script type="text/javascript">
+    
+                 function Captcha(){
+                     var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+                     var i;
+                     for (i=0;i<6;i++){
+                       var a = alpha[Math.floor(Math.random() * alpha.length)];
+                       var b = alpha[Math.floor(Math.random() * alpha.length)];
+                       var c = alpha[Math.floor(Math.random() * alpha.length)];
+                       var d = alpha[Math.floor(Math.random() * alpha.length)];
+                       var e = alpha[Math.floor(Math.random() * alpha.length)];
+                       var f = alpha[Math.floor(Math.random() * alpha.length)];
+                       var g = alpha[Math.floor(Math.random() * alpha.length)];
+                      }
+                    var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+                    document.getElementById("mainCaptcha").value = code
+                  }
+                  function ValidCaptcha(){
+                      var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                      var string2 = removeSpaces(document.getElementById('txtInput').value);
+                      if (string1 == string2){
+                        return true;
+                      }
+                      else{        
+                        return false;
+                      }
+                  }
+                  function removeSpaces(string){
+                    return string.split(' ').join('');
+                  }
+          
+
+           function check()
+            {
+                
+            
+            
+               var pass = document.getElementById("Password").value;
+                
+                var cPass = document.getElementById("confmpassword").value;
+                
+            
+                if(pass != cPass)
+                    {
+                        alert("password and confirm password not matched");
+                    }
+            }
+            
+        </script>
+  </head>
+  <body style="background-color: white" 3D3D3d="Captcha();">
+  <div class="border">
+   <img src="img/logo.png" class="img">
+
+   </div>
+   
+     <div class="navbar navbar-inverse">
+     	<div class ="container">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeadercollapse">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        </button>
+      
+      	<div class="collapse navbar-collapse navHeadercollapse">
+      	<ul class="nav navbar-nav">
+        <li><a href="../index.html">HOME</a></li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="../service/manp.html">Manpower Recruitment</a></li>
+            <li><a href="../service/Campus Placement.html">Campus Placement</a></li>
+            <li><a href="../service/Temporary.html">Temporary staffing</a></li>
+            <li><a href="../service/HR.html">HR Process Outsourcing</a></li>
+            <li><a href="../service/HR Policy.html">HR Policy Implementation</a></li>
+            <li><a href="../srvice/Employee Background.html">Background Verification</a></li>
+            <li><a href="../service/Intership.html">Intership</a></li>
+          </ul>
+        </li>
+        <li><a href="../submit/submit.html">SUBMIT RESUME</a></li>
+        <li><a href="../job/job.html">JOBS VACANCY</a></li>
+        <li><a href="../contact/contact.html">CONTACT US</a></li>
+        <li><a href="../blog/blog.html">BLOG</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="../training/traininghr.html">Training</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--start register-->
+<form action="detailregistration.html" method="post">
+
+
+
+    
+                <h1 style="color:black" align="center">NEW SUBSCRIBER</h1>
+
+                <section style="background-color: #D3D3D3; margin-left:250px; margin-right: 250px;">
+      
+
+                     <table border="0.5" align="center">
+          
+                            <tr>
+                                 <td style="color:black">User_name</td>
+                                 <td><input type="text"  id="User_name" pattern="[a-z A-Z][a-z A-Z0-9-_\.]{1,20}"  title=" space,_,- are allow between to word" autofocus ="-" placeholder="enter your first name" required="required" > <br><br></td>
+              
+                           </tr>
+
+                         <br><br>
+       
+                            <tr>
+                                  <td style="color:black">E-mail</td>
+                                  <td>
+                                       
+                                      <input type="email"   id="E-mail"  name="e-mail"  pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"   placeholder="enter your email adddresss" required="required" > <br><br>
+                                  </td>
+                                
+                            </tr>    
+                
+              
+            
+                        
+                            <tr>
+                                  <td style="color:black">mobile number</td>
+                                   <td>
+                                       <input type="text"  id="mobile number" pattern="[0-9]{10}" title="invalid mobile number" placeholder="enter your mobile number" required="required" onclick="phonenumber(input txt)"> <br><br>
+                                  </td>
+                  
+                            </tr>  
+              
+            
+                        
+     
+                         
+              
+                             
+              
+              
+               
+              
+                         
+                         
+                         
+                             <tr>
+                                     <td style="color:black">Registered For </td>
+                                     <td>
+                                            <select name="apply_for" required="" style="margin-bottom:15px;">
+        <option value=""> - Registering for - </option>
+        <option value="1">Resource Recruitment</option>
+        <option value="2">Campus Placement</option>
+        <option value="3">Temporary Staffing</option>
+        <option value="4">HR Process Outsourcing</option>
+        <option value="5">HR Policy Implementation</option>
+        <option value="6">Background Verification</option>
+        <option value="7">Internship</option>
+    </select>  
+                        
+                                      </td> <br><br>
+                    
+                              </tr>
+              
+         
+              
+                         
+                         
+                         
+                            
+            
+                         
+                         
+                         
+                          <tr>
+                              <td style="color:black"> Please Enter Captcha </td>
+                       
+                              <td>
+                                   <input type="text" id="mainCaptcha"/>
+                                   <input type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+                           
+                                <br>
+                               
+                                <br>
+                            
+                                     <input type="text" id="txtInput"/>    
+                               </td>
+                        
+                           </tr>
+                
+              
+                          <tr> 
+                                  <td width= "50%" align="center"  >
+                   
+                                         <input type="Submit"   name="Submit" value="Submit"  onclick="alert(ValidCaptcha());" > 
+                   
+                                          <input type="reset" value="Reset"   onclick="Reset"  id="button">
+                                  </td> 
+            
+                           </tr>
+               
+                                  
+              
+              
+                     </table>
+ <br><br>
+             </form>
+
+
+
+<!--End register-->
+
+
+</section>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
